@@ -61,10 +61,12 @@ def batch_exif_delete(images, replace):
         as the original path. If now, the file name will have "_safe"
         appended to it.
     '''
+    print('\nRemoving EXIF data from:')
+
     for original_image_path in images:
         # validate that the file exists
         if not os.path.exists(original_image_path):
-            print('ERROR: File Not Found. ' + str(original_file_path))
+            print('\tERROR: File Not Found. ' + str(original_file_path))
             continue
 
         # build output file name
@@ -75,7 +77,10 @@ def batch_exif_delete(images, replace):
             new_image_path = base_path + "_safe" + ext
 
         # create new image file, with stripped EXIF data
+        print('\t' + str(original_image_path))
         exif_delete(original_image_path, new_image_path)
+
+    print('Done.\n')
 
 
 def exif_delete(original_file_path, new_file_path):
