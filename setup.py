@@ -1,3 +1,6 @@
+''' Run with:  python setup.py install_scripts
+'''
+
 from setuptools import setup
 
 readme_file = open("README.md", "r").read()
@@ -6,12 +9,13 @@ setup(
     name = "exif_delete",
     version = "0.9.0",
     author = "John Stilley",
-    description = ("A simple tool to remove the EXIF data from image files."),
+    description = ("A simple commandline tool to remove the EXIF data from image files."),
     license = "GPLv3",
-    keywords = "exif delete python",
+    keywords = "exif tool python",
     url = "https://github.com/theJollySin/exif_delete",
     scripts=['exif_delete.py'],
     long_description=readme_file,
+    install_requires=['PIL>=1.1.0'],
     classifiers=[
         "Development Status :: 4 - Beta",
         "Environment :: Console",
