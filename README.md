@@ -17,7 +17,7 @@ If you are new to Python, not to worry.  Very little installation is required.  
 
 Another option is to install using `setuptools`:
 
-    python setup.py install_scripts
+    python setup.py install
 
 Then just run the script as in the section below.  If you run the script and get the error:
 
