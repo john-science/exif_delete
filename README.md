@@ -1,6 +1,6 @@
 # exif_delete
 
-The photos you share online all contain metadata. This meta data includes: the location the photo was taken, the time, and detailed information about your camera / phone.  Facebook and many other companies use this information to track you and learn things about you. But *you* should be in control of what information you share with the world.
+All the photos you share online contain metadata. This meta data can include: the location the photo was taken, the time, and detailed information about your camera / phone.  Facebook and many other companies use this information to track you and learn things about you. But *you* should be in control of what information you share with the world.
 
 Enter the `exif_delete` tool.
 
@@ -9,9 +9,9 @@ This is a simple Python script that I use to strip all of the metadata from my p
 
 ## Installation
 
-If you are very familiar with Python, this script will work in Python version 2.6 through 3.5 and only requires one third-party library (`PIL`).  The installation should be exactly like you think.
+If you are familiar with Python, this script will work in Python version 2.6 through 3.5 and only requires one third-party library (`PIL`).  The installation is standard.
 
-If you are new to Python, not to worry.  Very little installation is required.  You *will* need to have some (relatively modern) version of Python installed on your computer, and you will need access to the command line. Then you just have to install `PIL`, the Python Imaging Library.  One way of doing that is to use `pip`:
+If you are new to Python, not to worry; very little installation is required.  You *will* need to have some (relatively modern) version of Python installed on your computer, and you will need access to the command line. Then you just have to install `PIL`, the Python Imaging Library.  One way of doing that is to use `pip`:
 
     pip install requirements.txt
 
@@ -23,7 +23,7 @@ Then just run the script as in the section below.  If you run the script and get
 
     ImportError: No module named PIL
 
-Then you did not correctly install the `PIL` module, and will have to go back a step.
+Then you did not correctly install the `PIL` module, and will have to get that installed.
 
 
 ## Usage
