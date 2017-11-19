@@ -89,7 +89,7 @@ def exif_delete(original_file_path, new_file_path):
     '''
     # open input image file
     try:
-        original = Image.open(open(original_file_path))
+        original = Image.open(original_file_path)
     except IOError:
         print('ERROR: Problem reading image file. ' + str(original_file_path))
 
