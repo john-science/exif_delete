@@ -13,7 +13,7 @@ If you are familiar with Python, this script will work in Python version 2.6 thr
 
 If you are new to Python, not to worry; very little installation is required.  You *will* need to have some (relatively modern) version of Python installed on your computer, and you will need access to the command line. Then you just have to install `PIL`, the Python Imaging Library.  One way of doing that is to use `pip`:
 
-    pip install requirements.txt
+    pip install -r requirements.txt
 
 Another option is to install using `setuptools`:
 
@@ -23,7 +23,7 @@ Then just run the script as in the section below.  If you run the script and get
 
     ImportError: No module named PIL
 
-Then you did not correctly install the `PIL` module, and will have to get that installed.
+Then you did not correctly install the `PIL` module, and will have to get that installed. Perhaps you got an error in the "pip install" line above?
 
 
 ## Usage
