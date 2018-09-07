@@ -1,6 +1,6 @@
 # exif_delete
 
-All the photos you share online contain metadata. This meta data can include: the location the photo was taken, the time, and detailed information about your camera / phone.  Facebook and many other companies use this information to track you and learn things about you. But *you* should be in control of what information you share with the world.
+All the photos you share online contain metadata. This meta data can include: the location the photo was taken, the time, and detailed information about your camera / phone.  Facebook and the other online advertisers make money by tracking and selling your personal information. But *you* should be in control of what information you share with the world.
 
 Enter the `exif_delete` tool.
 
