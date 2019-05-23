@@ -80,18 +80,16 @@ def batch_exif_delete(images, replace):
         print('\t' + str(original_image_path))
         exif_delete(original_image_path, new_image_path)
 
-    print('Done.\n')
-
 
 def exif_delete(original_file_path, new_file_path):
-    ''' Read an image file and write a new one,
-        that lacks the original metadata.
+    ''' Read an image file and write a new one that lacks all metadata.
     '''
     # open input image file
     try:
         original = Image.open(original_file_path)
     except IOError:
         print('ERROR: Problem reading image file. ' + str(original_file_path))
+        return
 
     # create output image, forgetting the EXIF metadata
     stripped = Image.new(original.mode, original.size)
