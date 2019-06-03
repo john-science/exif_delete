@@ -1,6 +1,12 @@
 # exif_delete
 
-All the photos you share online contain metadata. This meta data can include: the location the photo was taken, the time, and detailed information about your camera / phone.  Facebook and the other online advertisers make money by tracking and selling your personal information. But *you* should be in control of what information you share with the world.
+All the photos you share online contain metadata. This meta data can include:
+
+* the location the photo was taken
+* the time the photo was taken
+* detailed information about your camera / phone
+
+Facebook (and the other online advertisers) make money by tracking and selling your personal information. But *you* should be in control of what information you share with the world.
 
 Enter the `exif_delete` tool.
 
@@ -9,7 +15,7 @@ This is a simple Python script that I use to strip all of the metadata from my p
 
 ## Installation
 
-If you are familiar with Python, this script will work in Python version 2.6 through 3.5 and only requires one third-party library (`PIL`).  The installation is standard.
+If you are familiar with Python, this script will work in Python version 2.6 through 3.6 and only requires one third-party library (`PIL`).  The installation is standard.
 
 If you are new to Python, not to worry; very little installation is required.  You *will* need to have some (relatively modern) version of Python installed on your computer, and you will need access to the command line. Then you just have to install `PIL`, the Python Imaging Library.  One way of doing that is to use `pip`:
 
