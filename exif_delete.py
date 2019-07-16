@@ -27,6 +27,8 @@ from PIL import Image
 
 def main():
     ''' main function to allow the user to treat this as a stand-alone tool
+
+    Returns: None
     '''
     images = []
     replace = False
@@ -50,6 +52,8 @@ def main():
 
 def usage():
     ''' Print a help menu to the screen, if the user enters a bad command line flag.
+
+    Returns: None
     '''
     print(__doc__)
     exit()
@@ -57,9 +61,13 @@ def usage():
 
 def batch_exif_delete(images, replace):
     ''' Remove the EXIF data from a list of images.
-        If the `replace` flag is set to True, then the new path is the same
-        as the original path. If now, the file name will have "_safe"
-        appended to it.
+    If the `replace` flag is set to True, then the new path is the same as the original path.
+    If now, the file name will have "_safe" appended to it.
+
+    Args:
+        images (list): paths to one or more image files
+        replace (bool): Do you want to over-write the original file(s)?
+    Returns: None
     '''
     print('\nRemoving EXIF data from:')
 
@@ -83,6 +91,11 @@ def batch_exif_delete(images, replace):
 
 def exif_delete(original_file_path, new_file_path):
     ''' Read an image file and write a new one that lacks all metadata.
+
+    Args:
+        original_file_path (str): file path for the original image
+        new_file_path (str): where to write the new image
+    Returns: None
     '''
     # open input image file
     try:
