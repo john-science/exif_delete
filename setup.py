@@ -1,4 +1,4 @@
-''' Run with:  python setup.py install_scripts
+''' Install with:  python setup.py install_scripts
 '''
 
 from setuptools import setup
@@ -15,6 +15,7 @@ setup(
     url = "https://github.com/theJollySin/exif_delete",
     long_description=readme_file,
     install_requires=['pillow>=1.1.0'],
+    entry_points={'console_scripts': ['exif_delete=exif_delete:main']},
     classifiers=[
         "Development Status :: 4 - Beta",
         "Environment :: Console",
@@ -24,6 +25,8 @@ setup(
         "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
         "Topic :: Utilities",
+        "Topic :: Security"
     ],
 )
