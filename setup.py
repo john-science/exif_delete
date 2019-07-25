@@ -6,6 +6,7 @@ python setup.py install
 '''
 from setuptools import setup
 
+readme = open('README.md', 'r').read()
 
 setup(
     name = "exif_delete",
@@ -15,7 +16,7 @@ setup(
     license = "GPLv3",
     keywords = "tool security privacy images exif",
     url = "https://github.com/theJollySin/exif_delete",
-    long_description="A simple commandline tool to remove the EXIF data from image files.",
+    long_description=readme,
     install_requires=['pillow>=1.1.0'],
     py_modules=["exif_delete"],
     entry_points={'console_scripts': ['exif_delete=exif_delete:main']},
