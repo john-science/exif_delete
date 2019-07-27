@@ -10,7 +10,7 @@ readme = open('README.md', 'r').read()
 
 setup(
     name = "exif_delete",
-    version = "0.9.2",
+    version = "0.9.3",
     author = "John Stilley",
     description = "A simple commandline tool to remove the EXIF data from image files.",
     license = "GPLv3",
@@ -25,7 +25,6 @@ setup(
         "Environment :: Console",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
-        "Programming Language :: Python :: 3.3",
         "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
