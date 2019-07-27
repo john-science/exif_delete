@@ -17,15 +17,19 @@ This is a simple Python script that I use to strip all of the metadata from my p
 
 This script will work with Python v3.3 to v3.7 and only requires one third-party library: `PIL`.
 
+To install from local source:
+
+    python setup.py install
+
 
 ## Usage
 
 This is a simple commandline tool.  Just pass the name of the image file(s) you want to strip to the script, and it will do the rest:
 
     python exif_delete.py /path/to/my/image.jpg
-    
+
     python exif_delete.py image1.jpg image2.png image3.gif
-    
+
     python exif_delete.py /path/to/*/my/images/*.jpg
 
 By default, the script will create a new image file with `"_safe"` appended to the file name.  For instance, this:
