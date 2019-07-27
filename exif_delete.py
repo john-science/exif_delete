@@ -25,22 +25,24 @@ import sys
 from PIL import Image
 
 
-def main():
+def main(argz=[]):
     ''' main function to allow the user to treat this as a stand-alone tool
 
     Returns: None
     '''
     images = []
     replace = False
+    if not argz:
+        argz = sys.argv
 
     # commandline parsing
-    for i in range(1, len(sys.argv)):
-        if sys.argv[i].lower() in ['-r', '--r', '-replace', '--replace']:
+    for i in range(1, len(argz)):
+        if argz[i].lower() in ['-r', '--r', '-replace', '--replace']:
             replace = True
-        elif sys.argv[i].lower() in ['-h', '--h', '-help', '--help']:
+        elif argz[i].lower() in ['-h', '--h', '-help', '--help']:
             usage()
         else:
-            images.append(sys.argv[i])
+            images.append(argz[i])
 
     # error if no files are passed to the script
     if len(images) < 1:
