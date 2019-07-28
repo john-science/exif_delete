@@ -76,7 +76,7 @@ def batch_exif_delete(images, replace):
     for original_image_path in images:
         # validate that the file exists
         if not os.path.exists(original_image_path):
-            print('\tERROR: File Not Found. ' + str(original_file_path))
+            print('\tERROR: File Not Found. ' + str(original_image_path))
             continue
 
         # build output file name

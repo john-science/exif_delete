@@ -10,7 +10,7 @@ readme = open('README.md', 'r').read()
 
 setup(
     name = "exif_delete",
-    version = "0.9.4",
+    version = "0.9.5",
     author = "John Stilley",
     description = "A simple commandline tool to remove the EXIF data from image files.",
     license = "GPLv3",
