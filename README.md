@@ -6,18 +6,22 @@ All the photos you share online contain metadata. This metadata can include:
 * the time the photo was taken
 * detailed information about your camera / phone
 
-Facebook (and the other online advertisers) make money by tracking and selling your personal information. But *you* should be in control of what information you share with the world.
+Facebook (and most other online advertisers) make money by tracking and selling your personal information. But *you* should be in control of what information you share with the world.
 
 Enter the `exif_delete` tool.
 
-This is a simple Python script that I use to strip all of the metadata from my photos before I share them online.  It is lightweight, easy-to-use, and fast.  If you are like me, you take a lot of photos, and this tool will help protect your privacy.
+This is a simple Python script that I use to strip all of the metadata from my photos before I share them online.  It is lightweight and easy-to-use.  If you are like me, you take a lot of photos, and this tool will help protect your privacy.
 
 
 ## Installation
 
-This script will work with Python v3.3 to v3.7 and only requires one third-party library: `PIL`.
+This script will work with Python v3.4 to v3.7 and only requires one third-party library: `PIL`.
 
-To install from local source:
+You can install this tool using PyPI to grab the code and install it online by doing:
+
+    pip install exif_delete
+
+Or you can install from this repo locally:
 
     python setup.py install
 
@@ -36,7 +40,7 @@ By default, the script will create a new image file with `"_safe"` appended to t
 
     /full/path/to/image1234.jpg
 
-Will become:
+will become:
 
     /full/path/to/image1234_safe.jpg
 
