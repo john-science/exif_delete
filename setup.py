@@ -17,6 +17,7 @@ setup(
     keywords = "tool security privacy images exif",
     url = "https://github.com/theJollySin/exif_delete",
     long_description=readme,
+    long_description_content_type='text/markdown',
     install_requires=['pillow>=1.1.0'],
     py_modules=["exif_delete"],
     entry_points={'console_scripts': ['exif_delete=exif_delete:main']},
