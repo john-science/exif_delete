@@ -31,6 +31,8 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Topic :: Utilities",
-        "Topic :: Security"
+        "Topic :: Security",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Natural Language :: English"
     ],
 )
