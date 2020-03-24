@@ -134,9 +134,5 @@ class ExifDeleteTester(unittest.TestCase):
             shutil.rmtree(new_dir)
 
 
-def main():
-    unittest.main()
-
-
 if __name__ == '__main__':
-    main()
+    unittest.main()
