@@ -10,13 +10,14 @@ readme = open('README.md', 'r').read()
 
 setup(
     name = "exif_delete",
-    version = "0.9.6",
+    version = "0.9.7",
     author = "John Stilley",
     description = "A simple commandline tool to remove the EXIF data from image files.",
     license = "GPLv3",
     keywords = "tool security privacy images exif",
     url = "https://github.com/theJollySin/exif_delete",
     long_description=readme,
+    long_description_content_type='text/markdown',
     install_requires=['pillow>=1.1.0'],
     py_modules=["exif_delete"],
     entry_points={'console_scripts': ['exif_delete=exif_delete:main']},
@@ -30,6 +31,8 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Topic :: Utilities",
-        "Topic :: Security"
+        "Topic :: Security",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Natural Language :: English"
     ])
 
