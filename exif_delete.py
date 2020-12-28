@@ -23,6 +23,7 @@ import os
 import sys
 # third-party libraries
 from PIL import Image
+from PIL import ImageOps
 
 
 def main(argz=[]):
@@ -105,6 +106,9 @@ def exif_delete(original_file_path, new_file_path):
     except IOError:
         print('ERROR: Problem reading image file. ' + str(original_file_path))
         return
+
+    # Rotate image to correct orientation before removing EXIF data
+    original = ImageOps.exif_transpose(original)
 
     # create output image, forgetting the EXIF metadata
     stripped = Image.new(original.mode, original.size)
