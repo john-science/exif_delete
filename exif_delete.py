@@ -17,20 +17,18 @@ Usage:
     python exif_delete.py -r /path/to/images_*.png
     python exif_delete.py --replace /path/to/images_*.png
 """
-
 # standard libraries
 import os
 import sys
 # third-party libraries
-from PIL import Image
-from PIL import ImageOps
+from PIL import Image, ImageOps
 
 
 def main(argz=[]):
-    ''' main function to allow the user to treat this as a stand-alone tool
+    """ main function to allow the user to treat this as a stand-alone tool
 
     Returns: None
-    '''
+    """
     images = []
     replace = False
     if not argz:
@@ -54,16 +52,16 @@ def main(argz=[]):
 
 
 def usage():
-    ''' Print a help menu to the screen, if the user enters a bad command line flag.
+    """ Print a help menu to the screen, if the user enters a bad command line flag.
 
     Returns: None
-    '''
+    """
     print(__doc__)
     exit()
 
 
 def batch_exif_delete(images, replace):
-    ''' Remove the EXIF data from a list of images.
+    """ Remove the EXIF data from a list of images.
     If the `replace` flag is set to True, then the new path is the same as the original path.
     If now, the file name will have "_safe" appended to it.
 
@@ -71,7 +69,7 @@ def batch_exif_delete(images, replace):
         images (list): paths to one or more image files
         replace (bool): Do you want to over-write the original file(s)?
     Returns: None
-    '''
+    """
     print('\nRemoving EXIF data from:')
 
     for original_image_path in images:
@@ -93,13 +91,13 @@ def batch_exif_delete(images, replace):
 
 
 def exif_delete(original_file_path, new_file_path):
-    ''' Read an image file and write a new one that lacks all metadata.
+    """ Read an image file and write a new one that lacks all metadata.
 
     Args:
         original_file_path (str): file path for the original image
         new_file_path (str): where to write the new image
     Returns: None
-    '''
+    """
     # open input image file
     try:
         original = Image.open(original_file_path)
@@ -107,7 +105,7 @@ def exif_delete(original_file_path, new_file_path):
         print('ERROR: Problem reading image file. ' + str(original_file_path))
         return
 
-    # Rotate image to correct orientation before removing EXIF data
+    # rotate image to correct orientation before removing EXIF data
     original = ImageOps.exif_transpose(original)
 
     # create output image, forgetting the EXIF metadata
