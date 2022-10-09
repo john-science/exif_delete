@@ -4,7 +4,7 @@ all:
 	@grep -Ee '^[a-z].*:' Makefile | cut -d: -f1 | grep -vF all
 
 clean:
-	rm -rf build/ dist/ *.egg-info/ *.c *.so *.h __pycache__
+	git clean -dfxq --exclude=*.py
 
 uninstall: clean
 	@echo pip uninstalling exif_delete
