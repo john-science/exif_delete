@@ -15,7 +15,7 @@ This is a simple Python script that I use to strip all of the metadata from my p
 
 ## Installation
 
-This script will work with Python v3.4 to v3.7 and only requires one third-party library: `PIL`.
+This script will work with Python v3.9 to v3.13 and only requires one third-party library: `PIL`.
 
 You can install this tool using PyPI to grab the code and install it online by doing:
 
@@ -23,7 +23,7 @@ You can install this tool using PyPI to grab the code and install it online by d
 
 Or you can install from this repo locally:
 
-    python setup.py install
+    pip install -e .
 
 
 ## Usage
