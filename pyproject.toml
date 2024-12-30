@@ -85,10 +85,11 @@ exclude = [
 [tool.ruff.lint]
 # Enable pycodestyle (E) and Pyflakes (F) codes by default.
 # D - NumPy docstring rules
+# I - Import rules
 # N801 - Class name should use CapWords convention
 # SIM - code simplification rules
 # TID - tidy imports
-select = ["E", "F", "D", "N801", "SIM", "TID"]
+select = ["E", "D", "F", "I", "N801", "SIM", "TID"]
 
 # Ruff rules we ignore (for now) because they are not 100% automatable
 #
