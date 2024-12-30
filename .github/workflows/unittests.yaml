@@ -27,8 +27,7 @@ jobs:
         run: sudo apt-get update
       - name: Install PIP Packages
         run: |
-          pip install -e .
-          pip install pytest
+          pip install -e .[dev]
       - name: Run tests
         run: pytest test/
         env:
