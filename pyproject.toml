@@ -8,7 +8,7 @@ version = "0.9.9"
 authors = [{ name="John Stilley" }]
 description = "A simple commandline tool to remove the EXIF data from image files."
 readme = "README.md"
-requires-python = ">=3.7.0, <3.14"
+requires-python = ">=3.8.0, <3.14"
 dependencies = ["pillow>=1.1.0"]
 license = { file="LICENSE" }
 classifiers = [
@@ -18,7 +18,6 @@ classifiers = [
     "Topic :: Security",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
